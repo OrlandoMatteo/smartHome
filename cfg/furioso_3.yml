@@ -1,0 +1,8 @@
+Type: Temperature
+Unit: C
+Interval: 10
+Name: furioso_3
+Life: 1000
+Owner: furioso
+ID: 3
+CatalogAddress: http://catalogjs/v2

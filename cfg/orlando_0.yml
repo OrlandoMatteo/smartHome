@@ -1,0 +1,8 @@
+Type: Temperature
+Unit: C
+Interval: 10
+Name: orlando_0
+Life: 1000
+Owner: orlando
+ID: 0
+CatalogAddress: http://catalogjs/v2

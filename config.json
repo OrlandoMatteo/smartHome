@@ -1,0 +1,38 @@
+{
+  "Owners": [
+    {
+      "Name": "orlando",
+      "ID": 1,
+      "Houses": [
+        {
+          "ID": 1,
+          "Name": "Casa",
+          "Quantity": 3
+        }
+      ]
+    },
+    {
+      "Name": "furioso",
+      "ID": 2,
+      "Houses": [
+        {
+          "ID": 2,
+          "Name": "Casa",
+          "Quantity": 4
+        }
+      ]
+    }
+  ],
+  "CatalogAddress": "http://catalogjs/v2",
+  "Services": [
+    {
+      "Container_Name": "catalogjs",
+      "Expose": [
+        "80"
+      ],
+      "Ports": [
+        "5000:80"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+version: "3.5"
+services:
+  catalogjs:
+    container_name: catalogjs
+    image: orterra/catalogjs
+    expose:
+    - "80"
+    ports:
+    - 5000:80
+  furioso_0:
+    image: orterra/gosensor
+    volumes:
+    - ./cfg:/app/cfg/
+    container_name: furioso_0
+    environment:
+      FILENAME: cfg/furioso_0
+    depends_on:
+    - catalogjs
+    links:
+    - catalogjs
+  furioso_1:
+    image: orterra/gosensor
+    volumes:
+    - ./cfg:/app/cfg/
+    container_name: furioso_1
+    environment:
+      FILENAME: cfg/furioso_1
+    depends_on:
+    - catalogjs
+    links:
+    - catalogjs
+  furioso_2:
+    image: orterra/gosensor
+    volumes:
+    - ./cfg:/app/cfg/
+    container_name: furioso_2
+    environment:
+      FILENAME: cfg/furioso_2
+    depends_on:
+    - catalogjs
+    links:
+    - catalogjs
+  furioso_3:
+    image: orterra/gosensor
+    volumes:
+    - ./cfg:/app/cfg/
+    container_name: furioso_3
+    environment:
+      FILENAME: cfg/furioso_3
+    depends_on:
+    - catalogjs
+    links:
+    - catalogjs
+  orlando_0:
+    image: orterra/gosensor
+    volumes:
+    - ./cfg:/app/cfg/
+    container_name: orlando_0
+    environment:
+      FILENAME: cfg/orlando_0
+    depends_on:
+    - catalogjs
+    links:
+    - catalogjs
+  orlando_1:
+    image: orterra/gosensor
+    volumes:
+    - ./cfg:/app/cfg/
+    container_name: orlando_1
+    environment:
+      FILENAME: cfg/orlando_1
+    depends_on:
+    - catalogjs
+    links:
+    - catalogjs
+  orlando_2:
+    image: orterra/gosensor
+    volumes:
+    - ./cfg:/app/cfg/
+    container_name: orlando_2
+    environment:
+      FILENAME: cfg/orlando_2
+    depends_on:
+    - catalogjs
+    links:
+    - catalogjs
